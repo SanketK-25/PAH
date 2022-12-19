@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    tools:context=".Bid_Placing"
+    >
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:text="Upload Your Painting here"
+          android:textColor="@color/black"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <ImageView
+          android:id="@+id/selected_image"
+          android:layout_width="match_parent"
+          android:layout_height="209dp"
+          tools:layout_editor_absoluteX="2dp"
+
+          android:background="@drawable/noimageselected_foreground"
+          android:layout_margin="30dp"
+
+          />
+      <TextView
+          android:id="@+id/textview1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Duration"
+          android:typeface="sans"
+
+          android:textColor="@color/black"
+          android:textSize="25sp"
+
+          android:textStyle="bold"
+          android:layout_marginTop="5dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.217"
+
+          android:gravity="center"/>
+
+      <EditText
+          android:id="@+id/duration"
+          android:layout_gravity="center_horizontal"
+          android:layout_width="210dp"
+          android:layout_height="38dp"
+          android:background="@drawable/round_button"
+          android:ems="10"
+          android:gravity="center"
+          android:hint="In HOURS"
+          android:textColorHint="#C1BFBF"
+          android:inputType="number"
+          android:textColor="@color/black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.497"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.306" />
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Base Price "
+          android:textColor="@color/black"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          android:layout_marginTop="5dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.217"
+
+          android:gravity="center"/>
+
+      <EditText
+          android:id="@+id/baseprice"
+          android:layout_gravity="center_horizontal"
+          android:layout_width="210dp"
+          android:layout_height="38dp"
+          android:background="@drawable/round_button"
+          android:ems="10"
+          android:gravity="center"
+
+          android:textColorHint="#C1BFBF"
+          android:inputType="number"
+          android:textColor="@color/black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.497"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.306" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Painting Name"
+          android:layout_gravity="center_horizontal"
+          android:textColor="@color/black"
+          android:textSize="22sp"
+          android:textStyle="bold"
+          android:textAlignment="center"
+          />
+
+
+      <EditText
+          android:id="@+id/paintingName"
+          android:layout_width="210dp"
+          android:layout_height="38dp"
+          android:layout_gravity="center_horizontal"
+          android:background="@drawable/round_button"
+          android:ems="10"
+          android:gravity="center"
+
+          android:inputType="text"
+          android:textColor="@color/black"
+          android:textColorHint="#C1BFBF"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.497"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.306" />
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Artist"
+          android:layout_gravity="center_horizontal"
+          android:textColor="@color/black"
+          android:textSize="22sp"
+          android:textStyle="bold"
+          android:textAlignment="center"
+          />
+
+
+      <EditText
+          android:id="@+id/artistname"
+          android:layout_width="210dp"
+          android:layout_height="38dp"
+          android:layout_gravity="center_horizontal"
+          android:background="@drawable/round_button"
+          android:ems="10"
+          android:gravity="center"
+
+          android:inputType="text"
+          android:textColor="@color/black"
+          android:textColorHint="#C1BFBF"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.497"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.306" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Painting Description"
+          android:layout_gravity="center_horizontal"
+          android:textColor="@color/black"
+          android:textSize="22sp"
+          android:textStyle="bold"
+          />
+
+      <EditText
+          android:id="@+id/description"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="25dp"
+          android:layout_marginLeft="25dp"
+
+          android:background="#FFF"
+          android:gravity="left"
+          android:lines="5"
+          android:overScrollMode="ifContentScrolls"
+          android:scrollbarStyle="insideInset"
+          android:scrollbars="vertical"
+          android:scrollHorizontally="false"
+          android:textColor="@color/black" />
+
+      <Button
+          android:id="@+id/submit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:text="Submit"
+          />
+
+
+
+
+    </LinearLayout>
+
+  </ScrollView>
+
+
+
+
+</LinearLayout>
